@@ -10,9 +10,32 @@
   }
 }
 
+@keyframes brilhoTicket {
+  0% {
+    box-shadow: 0 0 5px #26da20;
+  }
+  50% {
+    box-shadow: 0 0 15px #26da20;
+  }
+  100% {
+    box-shadow: 0 0 5px #26da20;
+  }
+}
+
 .borderAnimated {
   border: 3px solid #DAA520; 
   border-radius: 0.5rem; 
+  animation: brilho 1.5s infinite; 
+}
+
+.paddingTicket {
+    padding: 10px;
+}
+
+.borderAnimatedTicket {
+  border: 3px solid #26da20; 
+  border-radius: 0.5rem;
+  padding: 10px;
   animation: brilho 1.5s infinite; 
 }
 

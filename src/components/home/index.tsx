@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './style.module.scss'
-import Image from 'next/image';
-// import { Container } from './styles';
-// background - image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80');
+import ButtonBuyTicket from '../buttonBuyTicket';
+
+
 const HomeTemplate: React.FC = () => {
     return (
         <>
@@ -26,6 +26,7 @@ const HomeTemplate: React.FC = () => {
                                     </p>
                                     <p className="mt-4 text-lg font-semibold text-blueGray-200">Confira as premiações abaixo e como participar.</p>
                                     <p className="mt-4 text-lg font-semibold text-blueGray-200">Data do sorteio: 31/08/2024 as 18:00.</p>
+                                    <ButtonBuyTicket />
                                 </div>
                             </div>
                         </div>
@@ -110,6 +111,7 @@ const HomeTemplate: React.FC = () => {
                                     O sorteio será realizado com base na extração da Loteria Federal, considerando a combinação dos 5 dígitos do 1º prêmio e os 2 primeiros dígitos do 2º prêmio.
                                 </p>
                             </div>
+                            <ButtonBuyTicket />
                         </div>
                         <div className={`pb-10 bg-blueGray-200 ${style.containerAboutDescription}`}>
                             <h1 className="text-center text-black font-semibold text-5xl py-2">
@@ -124,15 +126,16 @@ const HomeTemplate: React.FC = () => {
                                         <b>Também oferecemos pacotes promocionais com descontos progressivos para quem deseja aumentar as chances de ganhar:</b>
                                     </p>
                                     <ol className="text-center">
-                                        <li className='mt-4 text-lg text-black font-semibold'>10 bilhetes por R$ 9,90</li>
-                                        <li className='mt-4 text-lg text-black font-semibold'>20 bilhetes por R$ 17,90</li>
-                                        <li className='mt-4 text-lg text-black font-semibold'>50 bilhetes por R$ 37,50</li>
-                                        <li className='mt-4 text-lg text-black font-semibold'>100 bilhetes por R$ 69,00</li>
-                                        <li className='mt-4 text-lg text-black font-semibold'>250 bilhetes por R$ 147,50</li>
-                                        <li className='mt-4 text-lg text-black font-semibold' >1000 bilhetes por R$ 490,00</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>10 bilhetes por R$ 9,90</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>20 bilhetes por R$ 17,90</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>50 bilhetes por R$ 37,50</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimated} ${style.paddingTicket}`}>100 bilhetes por R$ 69,00</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>250 bilhetes por R$ 147,50</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`} >1000 bilhetes por R$ 490,00</li>
                                     </ol>
                                 </div>
                             </div>
+                            <ButtonBuyTicket />
                         </div>
                         <div className={`pb-10 bg-blueGray-200 ${style.containerAboutDescription}`}>
                             <h1 className="text-center text-black font-semibold text-5xl py-2">
@@ -154,6 +157,7 @@ const HomeTemplate: React.FC = () => {
                                     </p>
                                 </div>
                             </div>
+                            <ButtonBuyTicket />
                         </div>
                         <footer className="relative  pt-8 pb-6 mt-1">
                             <div className="container mx-auto px-4">
