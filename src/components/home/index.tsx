@@ -125,13 +125,13 @@ const HomeTemplate: React.FC = () => {
                                     <p className={`mt-4 text-lg text-black`}>
                                         <b>Também oferecemos pacotes promocionais com descontos progressivos para quem deseja aumentar as chances de ganhar:</b>
                                     </p>
-                                    <ol className="text-center">
-                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>10 bilhetes por R$ 9,90</li>
-                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>20 bilhetes por R$ 17,90</li>
-                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>50 bilhetes por R$ 37,50</li>
+                                    <ol className={`text-center ${style.marginList}`}>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`}>10 bilhetes por R$ 9,90</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`}>20 bilhetes por R$ 17,90</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`}>50 bilhetes por R$ 37,50</li>
                                         <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimated} ${style.paddingTicket}`}>100 bilhetes por R$ 69,00</li>
-                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`}>250 bilhetes por R$ 147,50</li>
-                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket}`} >1000 bilhetes por R$ 490,00</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`}>250 bilhetes por R$ 147,50</li>
+                                        <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`} >1000 bilhetes por R$ 490,00</li>
                                     </ol>
                                 </div>
                             </div>

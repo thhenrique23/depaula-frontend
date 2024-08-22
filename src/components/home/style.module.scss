@@ -15,7 +15,7 @@
     box-shadow: 0 0 5px #26da20;
   }
   50% {
-    box-shadow: 0 0 15px #26da20;
+    box-shadow: 0 0 10px #26da20;
   }
   100% {
     box-shadow: 0 0 5px #26da20;
@@ -29,14 +29,18 @@
 }
 
 .paddingTicket {
-    padding: 10px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.marginList {
+  margin-top: 24px;
 }
 
 .borderAnimatedTicket {
-  border: 3px solid #26da20; 
+  border: 1px solid #26da20; 
   border-radius: 0.5rem;
-  padding: 10px;
-  animation: brilho 1.5s infinite; 
+  animation: brilhoTicket 1.5s infinite; 
 }
 
 .widthCard {
