@@ -46,7 +46,7 @@ const HomeTemplate: React.FC = () => {
                                         </div>
                                         <h6 className="text-xl font-semibold">30 bilhetes de R$ 1000,00</h6>
                                         <p className="mt-2 mb-4 text-blueGray-500">
-                                            Sorteio de 1 Silicone + Lipo ou se desejar, <span className="font-semibold">R$ 30,000 mil reais no PIX</span>
+                                            30 bilhetes de, <span className="font-semibold">R$ 1000,00 cada, ou seja 30 sorteios.</span>
                                         </p>
                                     </div>
                                 </div>
@@ -85,9 +85,10 @@ const HomeTemplate: React.FC = () => {
                                         <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                                             <i className="fas fa-stethoscope"></i>
                                         </div>
-                                        <h6 className="text-xl font-semibold">1 Silicone + Lipo</h6>
+                                        <h6 className="text-xl font-semibold">1 Silicone + Lipo ou</h6>
+                                        <h6 className="text-xl font-semibold">30K no PIX</h6>
                                         <p className="mt-2 mb-4 text-blueGray-500">
-                                            Sorteio de 1 Silicone + Lipo ou se desejar, <span className="font-semibold">R$ 30,000 mil reais no PIX</span>
+                                            1 Silicone + Lipo ou, <span className="font-semibold">R$ 30,000 mil reais no PIX</span>
                                         </p>
                                     </div>
                                 </div>
