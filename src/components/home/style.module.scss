@@ -1,0 +1,31 @@
+.bgImage {
+    background-image: url('/images/depaula-han.jpeg');
+    background-position: top;
+    background-size: contain;
+}
+
+@keyframes brilho {
+  0% {
+    box-shadow: 0 0 5px #DAA520;
+  }
+  50% {
+    box-shadow: 0 0 15px #DAA520;
+  }
+  100% {
+    box-shadow: 0 0 5px #DAA520;
+  }
+}
+
+.borderAnimated {
+  border: 3px solid #DAA520; 
+  border-radius: 0.5rem; 
+  animation: brilho 1.5s infinite; 
+}
+
+.widthCard {
+    width: 19rem;
+}
+
+.heightImportantCard {
+    height: 15rem;
+}
