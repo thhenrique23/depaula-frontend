@@ -40,6 +40,19 @@ const HomeTemplate: React.FC = () => {
                 <section className="pb-10 bg-blueGray-200 -mt-24">
                     <div className="container mx-auto px-4">
                         <div className="flex flex-wrap justify-center">
+                            <div className={`w-full md:w-64 px-4 text-center`}>
+                                <div className={`relative flex flex-col h-56 min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg  ${style.borderAnimated}`}>
+                                    <div className={`px-4 py-5 flex-auto ${style.heightImportantCard}`}>
+                                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                                            <i className="fas fa-money-bill-alt"></i>
+                                        </div>
+                                        <h6 className="text-xl font-semibold">R$ 500.000,00 reais</h6>
+                                        <p className="mt-2 mb-4 text-blueGray-500">
+                                            É isso mesmo! Iremos sortear R$ 500,000,00 no <span className="font-semibold">primeiro prêmio.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                             <div className={`md:pt-12 lg:pt-4 w-full md:w-64 px-4 text-center`}>
                                 <div className="relative flex h-56 flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                     <div className={`px-4 py-5 flex-auto ${style.heightImportantCard}`}>
@@ -54,19 +67,7 @@ const HomeTemplate: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className={`w-full md:w-64 px-4 text-center`}>
-                                <div className={`relative flex flex-col h-56 min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg  ${style.borderAnimated}`}>
-                                    <div className={`px-4 py-5 flex-auto ${style.heightImportantCard}`}>
-                                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                                            <i className="fas fa-money-bill-alt"></i>
-                                        </div>
-                                        <h6 className="text-xl font-semibold">R$ 500.000,00 reais</h6>
-                                        <p className="mt-2 mb-4 text-blueGray-500">
-                                            É isso mesmo! Iremos sortear R$ 500,000,00 no <span className="font-semibold">primeiro prêmio.</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div className={`w-full md:w-64 px-4 text-center`}>
                                 <div className={`relative flex flex-col h-56 min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg  ${style.borderAnimated}`}>
                                     <div className={`px-4 py-5 flex-auto ${style.heightImportantCard}`}>
