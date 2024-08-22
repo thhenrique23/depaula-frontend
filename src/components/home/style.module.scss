@@ -1,9 +1,3 @@
-.bgImage {
-    background-image: url('/images/depaula-han.jpeg');
-    background-position: top;
-    background-size: contain;
-}
-
 @keyframes brilho {
   0% {
     box-shadow: 0 0 5px #DAA520;
@@ -28,4 +22,25 @@
 
 .heightImportantCard {
     height: 15rem;
+}
+
+.bgImage {
+    background-image: url('/images/depaula-han.jpeg');
+    background-position: top;
+    background-size: contain;
+}
+
+.containerAboutDescription {
+  margin-top: 24px;
+  .paddingText {
+      padding: 0px 10rem;
+  }
+
+  .marginParagraph {
+    margin-left: 1rem;
+  }
+
+  .widthPremiacao {
+    display: flex;
+  }
 }

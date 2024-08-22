@@ -19,12 +19,13 @@ const HomeTemplate: React.FC = () => {
                                         Super Sorteio
                                     </h1>
                                     <p className="mt-4 text-lg text-blueGray-200">
-                                        <strong>Não fique de fora!</strong> Participe do nosso mega sorteio e aumente suas chances de ganhar com várias oportunidades imperdíveis.
+                                        <strong>Não fique de fora!</strong> Participe do nosso mega sorteio e aumente suas chances de ganhar com várias oportunidades imperdíveis. <strong>Por apenas R$ 1,99 você já consegue participar.</strong>
                                     </p>
                                     <p className="mt-4 text-lg text-blueGray-200">
                                         Compre quantos bilhetes quiser. Quanto mais bilhetes, maiores são suas chances de ganhar!
                                     </p>
-                                    <p className="mt-4 text-lg font-semibold text-blueGray-200">Confira as premiações abaixo e como participar</p>
+                                    <p className="mt-4 text-lg font-semibold text-blueGray-200">Confira as premiações abaixo e como participar.</p>
+                                    <p className="mt-4 text-lg font-semibold text-blueGray-200">Data do sorteio: 31/08/2024 as 18:00.</p>
                                 </div>
                             </div>
                         </div>
@@ -94,12 +95,72 @@ const HomeTemplate: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className={`pb-10 bg-blueGray-200 ${style.containerAboutDescription}`}>
+                            <h1 className="text-center text-black font-semibold text-5xl py-2">
+                                Sobre o sorteio
+                            </h1>
+                            <div>
+                                <p className={`mt-4 text-center text-lg text-black ${style.paddingText}`}>
+                                    <span className={`font-semibold`}>Já imaginou ter meio milhão na conta? Ou um carro premium na garagem? </span> <br></br>
+                                    Você também pode ganhar uma cirurgia de mamoplastia com lipoaspiração (silicone) ou optar por R$ 30.000,00 em dinheiro!
+                                    E ainda tem a chance de levar um dos <b>30 prêmios de R$ 1.000,00 cada!</b>
+                                </p>
+                                <p className={`mt-4 text-lg text-center text-black ${style.paddingText}`}>
+                                    <span className='font-semibold'> Promoção válida em todo o território nacional, aberta a qualquer pessoa física com inscrição regular no Cadastro de Pessoas Físicas (CPF) do Ministério da Fazenda, desde que atenda a todos os requisitos descritos no REGULAMENTO.  </span>
+                                    O sorteio será realizado com base na extração da Loteria Federal, considerando a combinação dos 5 dígitos do 1º prêmio e os 2 primeiros dígitos do 2º prêmio.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={`pb-10 bg-blueGray-200 ${style.containerAboutDescription}`}>
+                            <h1 className="text-center text-black font-semibold text-5xl py-2">
+                                Como Participar do Sorteio
+                            </h1>
+                            <div className={`flex justify-center align-center`}>
+                                <div className={`text-left my-4 ${style.paddingText}`}>
+                                    <p className={`mt-4 text-lg text-black`}>
+                                        Participar é super fácil! Você pode escolher quantos bilhetes quiser e adquirir quantos desejar.
+                                    </p>
+                                    <p className={`mt-4 text-lg text-black`}>
+                                        <b>Também oferecemos pacotes promocionais com descontos progressivos para quem deseja aumentar as chances de ganhar:</b>
+                                    </p>
+                                    <ol className="text-center">
+                                        <li className='mt-4 text-lg text-black font-semibold'>10 bilhetes por R$ 9,90</li>
+                                        <li className='mt-4 text-lg text-black font-semibold'>20 bilhetes por R$ 17,90</li>
+                                        <li className='mt-4 text-lg text-black font-semibold'>50 bilhetes por R$ 37,50</li>
+                                        <li className='mt-4 text-lg text-black font-semibold'>100 bilhetes por R$ 69,00</li>
+                                        <li className='mt-4 text-lg text-black font-semibold'>250 bilhetes por R$ 147,50</li>
+                                        <li className='mt-4 text-lg text-black font-semibold' >1000 bilhetes por R$ 490,00</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={`pb-10 bg-blueGray-200 ${style.containerAboutDescription}`}>
+                            <h1 className="text-center text-black font-semibold text-5xl py-2">
+                                Premiações
+                            </h1>
+                            <div className={`flex justify-center align-center`}>
+                                <div className={`text-left my-4 ${style.paddingText}`}>
+                                    <p className={`mt-4 text-lg text-black`}>
+                                        <b>Primeiro prêmio:</b>  R$ 500.000,00 (Meio milhão de reais).
+                                    </p>
+                                    <p className={`mt-4 text-lg text-black`}>
+                                        <b>Segundo prêmio:</b>  Carro Audi A3 2017.
+                                    </p>
+                                    <p className={`mt-4 text-lg text-black`}>
+                                        <b>Terceiro prêmio:</b>  Cirurgia de mamoplastia (Silicone) de aumento com lipoaspiração ou o valor de R$ 30.000,00 (trinta mil reais) no lugar da cirurgia.
+                                    </p>
+                                    <p className={`mt-4 text-lg text-black`}>
+                                        <b>Quarto prêmio:</b>  30 bilhetes de R$ 1.000,00 cada. Serão 30 sorteados que levarão 1,000,00.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <footer className="relative  pt-8 pb-6 mt-1">
                             <div className="container mx-auto px-4">
                                 <div className="flex flex-wrap items-center md:justify-between justify-center">
                                     <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-                                        <div className="text-sm text-blueGray-500 font-semibold py-1">
-                                            Mais informações: <b>Instagram:</b><a href="https://www.instagram.com/depaulapremiacoes?igsh=MXVmyYndkcG10bHBpYQ==" target="_blank" className="text-blueGray-500 hover:text-blueGray-800">@depaulapremiacoes</a>.
+                                        <div className="text-sm text-blueGray-700 font-semibold py-1">
+                                            Mais informações: <strong>Instagram:  </strong><a href="https://www.instagram.com/depaulapremiacoes?igsh=MXVmyYndkcG10bHBpYQ==" target="_blank" className="text-blueGray-500 hover:text-blueGray-800 font-bold">@depaulapremiacoes</a>.
                                         </div>
                                     </div>
                                 </div>
