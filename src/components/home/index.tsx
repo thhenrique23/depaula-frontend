@@ -101,12 +101,12 @@ const HomeTemplate: React.FC = () => {
                                 Sobre o sorteio
                             </h1>
                             <div>
-                                <p className={`mt-4 text-center text-lg text-black ${style.paddingText}`}>
+                                <p className={`mt-4 text-center text-lg text-black  md:p-2 sm:p-2`}>
                                     <span className={`font-semibold`}>Já imaginou ter meio milhão na conta? Ou um carro premium na garagem? </span> <br></br>
                                     Você também pode ganhar uma cirurgia de mamoplastia com lipoaspiração (silicone) ou optar por R$ 30.000,00 em dinheiro!
                                     E ainda tem a chance de levar um dos <b>30 prêmios de R$ 1.000,00 cada!</b>
                                 </p>
-                                <p className={`mt-4 text-lg text-center text-black ${style.paddingText}`}>
+                                <p className={`mt-4 text-lg text-center text-black `}>
                                     <span className='font-semibold'> Promoção válida em todo o território nacional, aberta a qualquer pessoa física com inscrição regular no Cadastro de Pessoas Físicas (CPF) do Ministério da Fazenda, desde que atenda a todos os requisitos descritos no REGULAMENTO.  </span>
                                     O sorteio será realizado com base na extração da Loteria Federal, considerando a combinação dos 5 dígitos do 1º prêmio e os 2 primeiros dígitos do 2º prêmio.
                                 </p>
@@ -118,14 +118,14 @@ const HomeTemplate: React.FC = () => {
                                 Como Participar do Sorteio
                             </h1>
                             <div className={`flex justify-center align-center`}>
-                                <div className={`text-left my-4 ${style.paddingText}`}>
+                                <div className={`text-left my-4 `}>
                                     <p className={`mt-4 text-lg text-black`}>
                                         Participar é super fácil! Você pode escolher quantos bilhetes quiser e adquirir quantos desejar.
                                     </p>
                                     <p className={`mt-4 text-lg text-black`}>
                                         <b>Também oferecemos pacotes promocionais com descontos progressivos para quem deseja aumentar as chances de ganhar:</b>
                                     </p>
-                                    <ol className={`text-center ${style.marginList}`}>
+                                    <ol className={`text-center `}>
                                         <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`}>10 bilhetes por R$ 9,90</li>
                                         <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`}>20 bilhetes por R$ 17,90</li>
                                         <li className={`mt-4 text-lg text-black font-semibold ${style.borderAnimatedTicket} ${style.paddingTicket}`}>50 bilhetes por R$ 37,50</li>
@@ -141,8 +141,8 @@ const HomeTemplate: React.FC = () => {
                             <h1 className="text-center text-black font-semibold text-5xl py-2">
                                 Premiações
                             </h1>
-                            <div className={`flex justify-center align-center`}>
-                                <div className={`text-left my-4 ${style.paddingText}`}>
+                            <div className={`flex justify-center align-center flex-wrap`}>
+                                <div className={`text-center my-4 `}>
                                     <p className={`mt-4 text-lg text-black`}>
                                         <b>Primeiro prêmio:</b>  R$ 500.000,00 (Meio milhão de reais).
                                     </p>
@@ -150,7 +150,7 @@ const HomeTemplate: React.FC = () => {
                                         <b>Segundo prêmio:</b>  Carro Audi A3 2017.
                                     </p>
                                     <p className={`mt-4 text-lg text-black`}>
-                                        <b>Terceiro prêmio:</b>  Cirurgia de mamoplastia (Silicone) de aumento com lipoaspiração ou o valor de R$ 30.000,00 (trinta mil reais) no lugar da cirurgia.
+                                        <b>Terceiro prêmio:</b>  Cirurgia de mamoplastia (Silicone) de aumento com lipoaspiração ou <br></br>o valor de R$ 30.000,00 (trinta mil reais) no lugar da cirurgia.
                                     </p>
                                     <p className={`mt-4 text-lg text-black`}>
                                         <b>Quarto prêmio:</b>  30 bilhetes de R$ 1.000,00 cada. Serão 30 sorteados que levarão 1,000,00.
