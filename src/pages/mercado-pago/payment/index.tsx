@@ -2,7 +2,7 @@ import { initMercadoPago, Payment, StatusScreen } from '@mercadopago/sdk-react'
 import { useRouter } from 'next/router';
 import { useEffect, useState } from "react";
 
-initMercadoPago("XXX", {
+initMercadoPago("TEST-2d75059a-7179-42b3-9ef5-0737aeceb1b0", {
     locale: "pt-BR",
 });
 
