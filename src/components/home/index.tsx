@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './style.module.scss'
-import ButtonBuyTicket from '../buttonBuyTicket';
-
+import ButtonBuyTicket from '../button-buy-ticket';
+import ModalFormCheckout from '../modal-form-checkout';
 
 const HomeTemplate: React.FC = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const setOpen = (isOpen: boolean) => {
+        setShowModal(isOpen);
+    }
+
     return (
         <>
             <section className="relative  bg-blueGray-50">
@@ -26,7 +32,7 @@ const HomeTemplate: React.FC = () => {
                                     </p>
                                     <p className="mt-4 text-lg font-semibold text-blueGray-200">Confira as premiações abaixo e como participar.</p>
                                     <p className="mt-4 text-lg font-semibold text-blueGray-200">Data do sorteio: 31/08/2024 as 18:00.</p>
-                                    <ButtonBuyTicket />
+                                    <ButtonBuyTicket onClick={() => setOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -66,8 +72,6 @@ const HomeTemplate: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-
-
                             <div className={`w-full md:w-64 px-4 text-center`}>
                                 <div className={`relative flex flex-col h-56 min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg  ${style.borderAnimated}`}>
                                     <div className={`px-4 py-5 flex-auto ${style.heightImportantCard}`}>
@@ -112,7 +116,7 @@ const HomeTemplate: React.FC = () => {
                                     O sorteio será realizado com base na extração da Loteria Federal, considerando a combinação dos 5 dígitos do 1º prêmio e os 2 primeiros dígitos do 2º prêmio.
                                 </p>
                             </div>
-                            <ButtonBuyTicket />
+                            <ButtonBuyTicket onClick={() => setOpen(true)} />
                         </div>
                         <div className={`pb-10 bg-blueGray-200 ${style.containerAboutDescription}`}>
                             <h1 className="text-center text-black font-semibold text-5xl py-2">
@@ -136,7 +140,7 @@ const HomeTemplate: React.FC = () => {
                                     </ol>
                                 </div>
                             </div>
-                            <ButtonBuyTicket />
+                            <ButtonBuyTicket onClick={() => setOpen(true)} />
                         </div>
                         <div className={`pb-10 bg-blueGray-200 ${style.containerAboutDescription}`}>
                             <h1 className="text-center text-black font-semibold text-5xl py-2">
@@ -158,7 +162,7 @@ const HomeTemplate: React.FC = () => {
                                     </p>
                                 </div>
                             </div>
-                            <ButtonBuyTicket />
+                            <ButtonBuyTicket onClick={() => setOpen(true)} />
                         </div>
                         <footer className="relative  pt-8 pb-6 mt-1">
                             <div className="container mx-auto px-4">
@@ -174,6 +178,7 @@ const HomeTemplate: React.FC = () => {
                     </div>
                 </section>
             </section >
+            <ModalFormCheckout open={showModal} setOpen={setOpen} />
         </>
     )
 }
